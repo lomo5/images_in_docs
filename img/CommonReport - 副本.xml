@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config>
+  <ParkID>1401050019</ParkID>  <!-- 车场id，服务端分配，服务端用来区分不同车场用，不能为空 -->
+  <ParkName></ParkName>  <!-- 无特殊需求保持为空。软件内车场名称，配置后进出名称对应车场才会上报进出记录。不配置则进出所有车场上报 -->
+  <ProjectName></ProjectName> <!-- 项目名称，进出接口推送，可为空 -->
+  <InOutImageType>2</InOutImageType> <!-- 进出上报图片类型 0大图 1小图 2大小图 -->
+  <ReportPanorama>0</ReportPanorama> <!-- 上报全景图 -->
+  <VehicleInUrl>http://221.204.177.4/vehicleManager/carInData</VehicleInUrl> <!-- 车辆入场上报地址，配置此项后上报，不配置不报。支持多推，多个地址用英文,隔开 -->
+  <VehicleOutUrl>https://221.204.177.4/vehicleManager/carOutData</VehicleOutUrl>  <!-- 车辆出场上报地址。支持多推，多个地址用英文,隔开 -->
+  <SpaceFullUrl>https://221.204.177.4/vehicleManager/getLeftPlot</SpaceFullUrl>  <!-- 车位上报地址。支持多推，多个地址用英文,隔开 -->
+  <AddOrUpdateVehicleUrl></AddOrUpdateVehicleUrl>  <!--新增或修改车辆上报地址 -->
+  <DeleteVehicleUrl></DeleteVehicleUrl> <!--删除车辆上报地址 -->
+  <StoredConsumeUrl></StoredConsumeUrl>  <!-- 储值消费上报地址 -->
+  <ManualOpenGateUrl></ManualOpenGateUrl> <!-- 手动开闸推送 -->
+  <AuthFullUrl></AuthFullUrl>  <!-- 用户进出验证地址，配置此项后上报，不配置不报 -->
+  <WalletPayUrl></WalletPayUrl> <!-- 钱包支付地址，配置后调用，不配置不检查 -->
+  <WalletPayReportPhoto>0</WalletPayReportPhoto> <!-- 钱包支付上报图片 1启用 0关闭 -->
+  <OnParkChangeUrl></OnParkChangeUrl> <!-- 在场车辆改变车牌或清理上报-->
+  <OperatorUrl></OperatorUrl> <!-- 操作员新增修改上报 -->
+  <LoginLogoutUrl></LoginLogoutUrl> <!-- 操作员登录登出上报 -->
+</Config>
